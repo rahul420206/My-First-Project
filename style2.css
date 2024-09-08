@@ -11,7 +11,7 @@ body{
 	width: 300px;
 	padding: 30px;
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	background: rgba(0,0,0,0.4);
@@ -60,4 +60,16 @@ body{
 
 .box input[type="submit"]:hover{
 	background: #fff;
+}
+
+.box input[type="text"]::placeholder,
+.box input[type="password"]::placeholder {
+    color: white; /* Change placeholder text color to white */
+    opacity: 1; /* Ensure the opacity is set to 1 for better visibility */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }

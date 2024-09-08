@@ -7,48 +7,84 @@
     <script src="login2.js"></script>
 </head>
 <body>
-    <div class="header">
-        <img src="logo.png" alt="NIT AP Logo" class="logo"> <!-- Add your logo here -->
-        <h2>NIT Andhra Pradesh</h2>
-    </div>
+<section class="header">
+    <nav>
+        <div class="logo-container">
+            <a href="index.html"><img src="images/nit-logo.png" class="logo"></a>
+            <h1>NIT Andhra Pradesh</h1>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+</section>
 
-    <form class="box" action="home.html" method="POST" onsubmit="return validate()">
-        <h1>Login</h1>
-        <input type="text" name="username" placeholder="Enter Username" id="username">
-        <input type="password" name="password" placeholder="Enter Password" id="password">
-        <input type="submit" value="Login">
-        <button type="button" class="guest-login" onclick="window.location.href='home.html'">Guest Login</button>
-        <p class="info-text">Username: user | Password: password</p> <!-- Info text -->
-    </form>
+<form class="box" action="home.html" method="POST" onsubmit="return validate()">
+    <h1>Login</h1>
+    <input type="text" name="username" placeholder="Enter Username" id="username">
+    <input type="password" name="password" placeholder="Enter Password" id="password">
+    <input type="submit" value="Login">
+    <button type="button" class="guest-login" onclick="window.location.href='home.html'">Guest Login</button>
+    <p class="info-text">Use Guest login or Enter below credentials</p>
+    <p class="info-text">Username: user | Password: password</p>
+</form>
 
-    <style>
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .logo {
-            width: 100px;
-            height: auto;
-        }
-        .guest-login {
-            margin-top: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
-            width: 100%;
-        }
-        .guest-login:hover {
-            background-color: #45a049;
-        }
-        .info-text {
-            margin-top: 15px;
-            font-size: 14px;
-            color: #666;
-            text-align: center;
-        }
-    </style>
+<style>
+    /* Styles for the header */
+    .header {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 6%;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        width: 110px;
+        margin-right: 15px; /* Adjust space between the logo and the text */
+    }
+
+    nav h1 {
+        color: white; /* Change text color to white */
+        font-size: 36px; /* Adjust font size */
+        font-family: 'Arial', sans-serif; /* You can add the font-family from the previous code */
+        font-weight: bold; /* Make the text bold if needed */
+        letter-spacing: 1px; /* Add letter-spacing for better readability */
+        margin: 0;
+    }
+
+    /* Guest login button styling */
+    .guest-login {
+        margin-top: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .guest-login:hover {
+        background-color: #45a049;
+    }
+
+    /* Info text styling */
+    .info-text {
+        margin-top: 15px;
+        font-size: 14px;
+        color: white; /* Change text color to white */
+        text-align: center;
+    }
+</style>
 </body>
 </html>
