@@ -312,7 +312,7 @@ h3{
 	color: #f44336;
 }
 
-@media(max=-width: 700px){
+@media(max-width: 700px){
 	.testimonal-col img{
 		margin-left: 0px;
 		margin-right: 15px;
@@ -454,7 +454,7 @@ h3{
 	background: #f44336;
 	color: #fff;
 	padding: 7px 0;
-	front-size: 16px;
+	font-size: 16px;
     margin-bottom: 20px;
 }
 
@@ -549,4 +549,21 @@ h3{
 	margin-bottom: 17px;
 	outline: none;
 	border: 1px solid #ccc;
+}
+
+/* Styling for the logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 50px; /* Adjust height as per your requirement */
+    margin-right: 10px;
+}
+
+.logo-container h1 {
+    font-size: 24px; /* Adjust font size as needed */
+    color: #333; /* Adjust color as needed */
+    font-weight: 600;
 }
